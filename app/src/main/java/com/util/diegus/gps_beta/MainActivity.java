@@ -118,9 +118,18 @@ public class MainActivity extends AppCompatActivity {
         //super.onActivityResult(requestCode, resultCode, data);
         if(resultCode == DISCOVER_DURATION && requestCode == REQUEST_BLU) {
 
+
+           /* String content = "This is just a test";
+            Intent sendIntent = new Intent(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, content);
+            sendIntent.setType("text/plain");
+            String title = "Share with…";
+            startActivity(Intent.createChooser(sendIntent, title));*/
+
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
             intent.setType("text/plain");
+
             File f = new File(Environment.getExternalStorageDirectory().getPath(), "demogoku.png");
             intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(f));
 
