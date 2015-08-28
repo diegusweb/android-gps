@@ -49,7 +49,7 @@ public class MyLocationListener implements LocationListener {
         // status del proveedor de localizaci—n (GPS)
         // Los diferentes Status son:
         // OUT_OF_SERVICE -> Si el proveedor esta fuera de servicio
-        // TEMPORARILY_UNAVAILABLE -> Temp˜ralmente no disponible pero se
+        // TEMPORARILY_UNAVAILABLE -> Temporalmente no disponible pero se
         // espera que este disponible en breve
         // AVAILABLE -> Disponible
     }

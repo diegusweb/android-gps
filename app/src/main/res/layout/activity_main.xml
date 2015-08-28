@@ -12,6 +12,7 @@
         android:layout_below="@+id/message_id"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="112dp"
+        android:textSize="18dp"
         android:text="@string/textview" />
 
     <TextView
@@ -21,6 +22,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="174dp"
+        android:textSize="18dp"
         android:text="@string/hello_world" />
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Send via Bluetooth"
+        android:onClick="sendViaBluetooth"/>
+
 
 </RelativeLayout>
