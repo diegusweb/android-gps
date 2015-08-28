@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setLocation(Location loc) {
-        //Obtener la direcci—n de la calle a partir de la latitud y la longitud
+        //Obtener la direccion de la calle a partir de la latitud y la longitud
         if (loc.getLatitude() != 0.0 && loc.getLongitude() != 0.0) {
             try {
                 Geocoder geocoder = new Geocoder(this, Locale.getDefault());
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                         loc.getLatitude(), loc.getLongitude(), 1);
                 if (!list.isEmpty()) {
                     Address address = list.get(0);
-                    messageTextView2.setText("Mi direcci—n es: \n"
+                    messageTextView2.setText("Mi direccion es: \n"
                             + address.getAddressLine(0));
                 }
 
