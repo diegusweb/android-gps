@@ -45,11 +45,11 @@ public class MyLocationListener implements LocationListener {
 
     @Override
     public void onStatusChanged(String s, int i, Bundle bundle) {
-        // Este mŽtodo se ejecuta cada vez que se detecta un cambio en el
+        // Este metodo se ejecuta cada vez que se detecta un cambio en el
         // status del proveedor de localizaci—n (GPS)
         // Los diferentes Status son:
         // OUT_OF_SERVICE -> Si el proveedor esta fuera de servicio
-        // TEMPORARILY_UNAVAILABLE -> Temp˜ralmente no disponible pero se
+        // TEMPORARILY_UNAVAILABLE -> Temporalmente no disponible pero se
         // espera que este disponible en breve
         // AVAILABLE -> Disponible
     }
