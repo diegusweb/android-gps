@@ -31,8 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
 		/* Use the LocationManager class to obtain GPS locations */
         LocationManager mlocManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
         MyLocationListener mlocListener = new MyLocationListener();
+
         mlocListener.setMainActivity(this);
+        
         mlocManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0,
                 (LocationListener) mlocListener);
 
